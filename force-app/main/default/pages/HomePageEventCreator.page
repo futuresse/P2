@@ -1,0 +1,5 @@
+<apex:page >
+    <p>
+        Welcome to our homepage for event creators
+    </p>
+</apex:page>

@@ -1,0 +1,29 @@
+<apex:page controller="healthHubHomeController">
+    <apex:slds >
+        <style>
+            #button {  
+                            background-color:#63DA8E /* Seafoam Green */!important;
+                            text-align:center !important;
+            }
+        </style>
+        <div class="slds-scope">
+            <div class="slds-grid slds-wrap" style="background-color: green;" >
+                <div class = "slds-grid slds-grid-vertical slds-size_2-of-3 slds-align-bottom" >
+                    <div class = "slds-col slds-grid-horizontal slds-size_1-of-2  slds-align_absolute-center" >
+                         <apex:form style="background-color:#63DA8E">
+                          <apex:pageBlock >
+                          <div style="background-color:#63DA8E">
+                                    <apex:commandButton style="background-color:#63DA8E; height:50px; width: 300px;" value="Login" 
+                                                        action="https://forcehealthhub-developer-edition.na112.force.com/SandboxHub/login/"/>
+                                           <apex:commandButton style="background-color:#63DA8E; height:50px; width: 300px;" value="Sign Up" 
+                                    action="{c.getSiteRegister}"/>
+                              <!--https://forcehealthhub-developer-edition.na112.force.com/SandboxHub/SelfRegister/-->
+                         </div>
+                         </apex:pageBlock>
+                       </apex:form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </apex:slds>
+</apex:page>

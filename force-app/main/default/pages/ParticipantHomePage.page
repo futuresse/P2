@@ -1,0 +1,9 @@
+<apex:page controller="EventController">
+    <apex:pageBlock title="Upcoming Events">
+    	<apex:pageBlockTable value="{!events}" var="evt">
+            <apex:column value="{!evt.subject}" />
+            <apex:column value="{!evt.StartDateTime}" />
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    <apex:detail subject="{!eeeee.Id}"/>
+</apex:page>

@@ -1,0 +1,5 @@
+<apex:page >
+    <p>
+        Welcome to the participant homepage
+    </p>
+</apex:page>
