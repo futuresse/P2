@@ -14,10 +14,9 @@
                           <apex:pageBlock >
                           <div style="background-color:#63DA8E">
                                     <apex:commandButton style="background-color:#63DA8E; height:50px; width: 300px;" value="Login" 
-                                                        action="https://forcehealthhub-developer-edition.na112.force.com/SandboxHub/login/"/>
+                                                        action="https://forcehealthhub-developer-edition.na112.force.com/HealthEventHub/s/login/"/>
                                            <apex:commandButton style="background-color:#63DA8E; height:50px; width: 300px;" value="Sign Up" 
-                                    action="{c.getSiteRegister}"/>
-                              <!--https://forcehealthhub-developer-edition.na112.force.com/SandboxHub/SelfRegister/-->
+                                                               action="https://forcehealthhub-developer-edition.na112.force.com/HealthEventHub/s/login/SelfRegister/"/>
                          </div>
                          </apex:pageBlock>
                        </apex:form>

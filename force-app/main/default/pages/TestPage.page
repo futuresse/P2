@@ -1,0 +1,3 @@
+<apex:page controller="EventController">
+    <apex:detail subject="{!eventId}" relatedList="false" showChatter="true" />
+</apex:page>

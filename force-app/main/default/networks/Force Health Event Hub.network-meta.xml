@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInternalUserLogin>true</allowInternalUserLogin>
+    <allowMembersToFlag>false</allowMembersToFlag>
+    <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
+    <communityRoles/>
+    <disableReputationRecordConversations>false</disableReputationRecordConversations>
+    <emailSenderAddress>dustinetts@gmail.com</emailSenderAddress>
+    <emailSenderName>Sandbox</emailSenderName>
+    <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
+    <enableDirectMessages>true</enableDirectMessages>
+    <enableGuestChatter>false</enableGuestChatter>
+    <enableGuestFileAccess>true</enableGuestFileAccess>
+    <enableInvitation>false</enableInvitation>
+    <enableKnowledgeable>false</enableKnowledgeable>
+    <enableMemberVisibility>true</enableMemberVisibility>
+    <enableNicknameDisplay>false</enableNicknameDisplay>
+    <enablePrivateMessages>false</enablePrivateMessages>
+    <enableReputation>false</enableReputation>
+    <enableShowAllNetworkSettings>true</enableShowAllNetworkSettings>
+    <enableSiteAsContainer>true</enableSiteAsContainer>
+    <enableTalkingAboutStats>true</enableTalkingAboutStats>
+    <enableTopicAssignmentRules>true</enableTopicAssignmentRules>
+    <enableTopicSuggestions>false</enableTopicSuggestions>
+    <enableUpDownVote>false</enableUpDownVote>
+    <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
+    <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
+    <logoutUrl>https://forcehealthhub-developer-edition.na112.force.com/HealthEventHub/s/login/?isdtp=p1</logoutUrl>
+    <navigationLinkSet>
+        <navigationMenuItem>
+            <label>Login</label>
+            <position>1</position>
+            <publiclyAvailable>true</publiclyAvailable>
+            <type>MenuLabel</type>
+        </navigationMenuItem>
+        <navigationMenuItem>
+            <label>Home</label>
+            <position>2</position>
+            <publiclyAvailable>true</publiclyAvailable>
+            <target>/</target>
+            <type>InternalLink</type>
+        </navigationMenuItem>
+    </navigationLinkSet>
+    <networkMemberGroups>
+        <profile>admin</profile>
+        <profile>event creator</profile>
+        <profile>external identity user</profile>
+        <profile>chatter free user</profile>
+        <profile>event participant</profile>
+    </networkMemberGroups>
+    <networkPageOverrides>
+        <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
+        <forgotPasswordPageOverrideSetting>Designer</forgotPasswordPageOverrideSetting>
+        <homePageOverrideSetting>Standard</homePageOverrideSetting>
+        <loginPageOverrideSetting>Designer</loginPageOverrideSetting>
+        <selfRegProfilePageOverrideSetting>Designer</selfRegProfilePageOverrideSetting>
+    </networkPageOverrides>
+    <picassoSite>Force_Health_Event_Hub_C</picassoSite>
+    <selfRegProfile>event participant</selfRegProfile>
+    <selfRegistration>true</selfRegistration>
+    <sendWelcomeEmail>true</sendWelcomeEmail>
+    <site>Force_Health_Event_Hub</site>
+    <status>Live</status>
+    <tabs>
+        <customTab>Event__c</customTab>
+        <customTab>AllEvents</customTab>
+        <defaultTab>01r3i000000LcYq</defaultTab>
+    </tabs>
+    <urlPathPrefix>HealthEventHub</urlPathPrefix>
+    <welcomeTemplate>unfiled$public/CommunityWelcomeEmailTemplate</welcomeTemplate>
+</Network>

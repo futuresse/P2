@@ -1,5 +1,34 @@
-<apex:page >
-    <p>
-        Welcome to our homepage for event creators
-    </p>
+<apex:page controller="EventController">
+    <apex:form >
+        <apex:pageBlock title="Upcoming Events">
+            <apex:actionFunction action="{!myMethod}" name="callMyMethod" />
+            <apex:pageBlockTable value="{!events}" var="evt">
+                <!-- Serves as name for event. Right now column is labeled "Subject", should be "Event Title/Name" -->
+                <apex:column value="{!evt.Name}">
+                	<!--<p onclick="callMyMethod();">
+                        {!evt.subject}
+                    </p>-->
+                </apex:column>
+                
+                <!-- want to make column title "Start Date" rather than just "Start" -->
+                <apex:column title="Start Date" value="{!evt.Event_Start_Date__c}" />
+                
+                <apex:column value="{!evt.Event_End_Date__c}" />
+                <apex:column value="{!evt.Venue_Street_Address_1__c}" />
+                <apex:column value="{!evt.Event_Description__c}" />
+                <!-- Makes a link to the events page -->
+                
+                <apex:column >
+                    <apex:commandLink title="Open Event Page" value="Event Page" action="{!myMethod}">
+                        <apex:param name="eId" assignTo="{!eventId}" value="{!evt.Id}" />
+                    </apex:commandLink>
+                </apex:column>
+                
+            </apex:pageBlockTable>
+            <apex:pageBlockSection rendered="{!eventSelected}">
+                <apex:detail subject="{!eventId}" relatedList="false"  showChatter="true"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>	
+    
 </apex:page>

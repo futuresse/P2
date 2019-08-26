@@ -32,5 +32,19 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+    <!-- Start Community Types -->
+     <types>
+        <members>*</members>
+        <name>Network</name>
+    </types>
+     <types>
+        <members>*</members>
+        <name>CustomSite</name>
+    </types>
+     <types>
+        <members>*</members>
+        <name>SiteDotCom</name>
+    </types>
+    <!-- End Community Types -->
     <version>46.0</version>
 </Package>
